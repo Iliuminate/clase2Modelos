@@ -30,4 +30,5 @@
 
 [template public generateAnotacion(n : EAnnotation)]
 <li>[n.eAnnotations.details.value/]</li>
+<li>[n.eAnnotations.details.value.characters()/]</li>
 [/template]
