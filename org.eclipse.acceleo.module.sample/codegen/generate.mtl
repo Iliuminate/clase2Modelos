@@ -29,7 +29,7 @@
 
 
 [template public generateAnotacion(n : EAnnotation)]
-<li>[n.details.generateListAnotacion()/]</li>
+[n.details->select(key='gmm-documentation').generateListAnotacion()/]
 [/template]
 
 [template public generateListAnotacion(l : EStringToStringMapEntry)]
