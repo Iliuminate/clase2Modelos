@@ -18,4 +18,10 @@
 	
 [template public generateNombre(c : Class)]
 <li>[c.name/]</li>
+[c.attribute.generateNombre()/]
+[/template]
+
+
+[template public generateNombre(a : Property)]
+<li>[a.name/]</li>
 [/template]
