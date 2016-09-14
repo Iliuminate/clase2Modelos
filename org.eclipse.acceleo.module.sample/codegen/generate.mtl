@@ -17,5 +17,5 @@
 [/template]
 	
 [template public generateNombre(c : Class)]
-<li>[c.name]</li>
+<li>[c.name/]</li>
 [/template]
