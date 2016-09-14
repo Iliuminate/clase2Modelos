@@ -4,11 +4,11 @@
 
 [template public generate(p : Package)]
 [comment @main/]
-[file('documento.html', false, 'UTF-8')]
+[file('/documento.html', false, 'UTF-8')]
 <html>
 	<body>
 		<ul>
-			[p.packagedElement->filter(Class).generarNombre()/]
+			[p.packagedElement->filter(Class).generateNombre()/]
 		</ul>
 	</body>
 </html>
@@ -16,6 +16,6 @@
 [/file]
 [/template]
 	
-[template public generateElement(c : Class)]
+[template public generateNombre(c : Class)]
 <li>[c.name]</li>
 [/template]
