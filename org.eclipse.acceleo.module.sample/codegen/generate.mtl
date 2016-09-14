@@ -29,7 +29,7 @@
 
 
 [template public generateAnotacion(n : EAnnotation)]
-<li>[n.eAnnotations.details.generateListAnotacion()/]</li>
+<li>[n.details.generateListAnotacion()/]</li>
 [/template]
 
 [template public generateListAnotacion(l : EStringToStringMapEntry)]
