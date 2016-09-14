@@ -29,6 +29,9 @@
 
 
 [template public generateAnotacion(n : EAnnotation)]
-<li>[n.eAnnotations.details.value/]</li>
-<li>[n.eAnnotations.details.value.characters()/]</li>
+<li>[n.eAnnotations.details.generateListAnotacion()/]</li>
+[/template]
+
+[template public generateListAnotacion(l : EStringToStringMapEntry)]
+<li>[l.value/]</li>
 [/template]
